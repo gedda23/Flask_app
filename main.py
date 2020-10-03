@@ -16,7 +16,7 @@ posts = [{
     'Title'  :'Blog Post2',
     'Content':'Second Post Content'
 }]
-
+@app.route("/")
 @app.route("/hello")
 def home():
     return render_template('Hello.html',posts=posts)
